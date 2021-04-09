@@ -1,0 +1,869 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Ocultar buscador de la barra superior de sharepoint */
+._3Z7VFS_x3gZybNb1mFRy6C._1y4to_BFWuriD3uP1TvTQ8.Its0LEoVfS3AbQY9MWygN.o365sx-searchBoxInactive {
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Ocultar logo de la barra superior de sharepoint */
+#leftRegion.wfFdvWFDB5g8R2lHFkXD1 {
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+#suiteBarTop {
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.title-birthday-content .birthday-title {
+  color: black;
+  font-weight: normal;
+  margin-bottom: 0px !important;
+  margin-right: 15px;
+}
+
+.title-birthday-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px !important;
+}
+
+.title-birthday-content .add {
+  cursor: pointer;
+  border: 1px solid #575756;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.title-birthday-content .add span {
+  margin-left: 8px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1000;
+  margin-left: -15px;
+  transition: all 0.5s;
+}
+
+.title-birthday-content .add:hover span {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 30px;
+}
+img {
+  max-height: 5rem !important;
+  max-width: 60%;
+}
+.banner-container {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://secol.sharepoint.com/sites/Intranet/SiteAssets/IntranetSE/imagenes/banner-intranet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.banner-container h1 {
+  color: #E30613;
+  font-weight: bold;
+  font-size: 60px;
+  margin-left: 100px;
+}
+
+.banner-container .title {
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-bottom: 0px !important;
+}
+
+.cualidades {
+  color: red;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.cards-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 30px !important;
+}
+
+.cards-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 200px;
+  background-color: rgba(157, 157, 156, 0.5);
+}
+
+.cards-content div .expand {
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-radius: 0px 0px 400px 0px;
+  transition: all 0.2s ease-in;
+}
+
+.cards-content div .expand a {
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  margin-left: -40px;
+  transition: all 0.7s ease-in;
+}
+
+.cards-content div .expand-reports {
+  background-color: #E5AC1C;
+}
+
+.cards-content div .expand-projects {
+  background-color: #257725;
+}
+
+.cards-content div .expand-encuestas {
+  background-color: #E30613;
+}
+
+.cards-content div:hover .expand {
+  width: 250px;
+  height: 200px;
+  border-radius: 0px;
+}
+
+.cards-content div:hover a {
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.cards-content div h3 {
+  font-size: 25px;
+}
+
+.cards-content div .expand div {
+  cursor: pointer;
+}
+
+.cards-content div .expand div img {
+  max-width: 50px;
+}
+.modal-cards {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.modal-cards #close-modal {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.modal-cards .modal-content {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -400px;
+  transition: all 0.3s ease-in;
+}
+.modal-events {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.modal-events #close-modal-event {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.modal-events .modal-content-event {
+  position: absolute;
+  width: 850px;
+  height: 450px;
+  background-color: white;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -400px;
+  transition: all 0.3s ease-in;
+}
+.title-news-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-news-content .news-title {
+  color: black;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-bottom: 0px !important;
+  margin-right: 15px;
+}
+
+.title-news-content .add {
+  cursor: pointer;
+  border: 1px solid #575756;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.title-news-content .add span {
+  margin-left: 8px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1000;
+  margin-left: -15px;
+  transition: all 0.5s;
+}
+
+.title-news-content .add:hover span {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+.newsContent {
+  background-color: rgba(157, 157, 156, 0.5);
+  margin-top: 150px;
+  padding: 50px 10px;
+}
+
+.newsContent h1 {
+  color: black;
+}
+
+.newsCardsContent {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.newsCards {
+  background-color: white;
+  width: 250px;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+
+.cardImage {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: auto;
+}
+
+.cardImage img {
+  max-width: 100%;
+  max-height: 100% !important;
+}
+
+.cardContent {
+  padding: 10px;
+}
+
+.cardContent a {
+  text-align: center;
+  background-color: #B31816;
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.cardContent a:hover {
+  background-color: #E30613;
+}
+
+.cardImage .cliente {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: -200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.cardImage .cliente-millicom {
+  background-color: #013478;
+}
+
+.cardImage .cliente-intervial {
+  background-color: #0979D9;
+}
+
+.cardImage .cliente-ingredion {
+  background-color: #5DA23D;
+}
+
+.cardImage:hover .cliente {
+  top: 0;
+}
+.title-events-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.title-events-content .title {
+  color: black;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-bottom: 0px !important;
+  margin-right: 15px;
+}
+
+.title-events-content .add {
+  cursor: pointer;
+  border: 1px solid #575756;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.title-events-content .add span {
+  margin-left: 8px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1000;
+  margin-left: -15px;
+  transition: all 0.5s;
+}
+
+.title-events-content .add:hover span {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+.eventsCardsContent {
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+.eventsCardsContent .event {
+  position: relative;
+  width: 250px !important;
+  background-color: #1AB6C1;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.eventsCardsContent .event:hover {
+  background-color: #1dcad6;
+}
+
+.eventsCardsContent .event span svg {
+  color: white;
+  font-size: 35px;
+  opacity: 0.5;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.eventsCardsContent .event h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.eventsCardsContent .event p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 30px !important;
+}
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('/ajax-loader.cc27c798.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('/slick.964f802c.eot');
+    src: url('/slick.964f802c.eot?#iefix') format('embedded-opentype'), url('/slick.9e7373ff.woff') format('woff'), url('/slick.20ed192c.ttf') format('truetype'), url('/slick.12cb16a7.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+.birthday-content {
+  background: url(https://secol.sharepoint.com/sites/Intranet/SiteAssets/IntranetSE/imagenes/birthday-back2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.birthdayCardsContent .birthday {
+  width: 300px !important;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 10px 20px;
+  transition: all 0.3s;
+}
+
+.birthdayCardsContent .birthday .image-content {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.birthdayCardsContent .birthday .image-content img {
+  max-width: 100%;
+  max-height: 100% !important;
+}
+
+.birthdayCardsContent .birthday h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.birthdayCardsContent .birthday p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.birthday-content .slick-prev:before,
+.birthday-content .slick-next:before {
+  color: white !important;
+  font-size: 30px !important;
+  opacity: 1;
+}
+.footer {
+  background-color: #575756;
+  padding-top: 50px;
+  padding-bottom: 15px !important;
+  width: 100%;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-content a svg {
+  color: white;
+  font-size: 35px !important;
+  transition: all 0.5s;
+}
+
+.footer .footer-content a:nth-child(1) svg:hover {
+  color: #0270AD;
+}
+
+.footer .footer-content a:nth-child(2) svg:hover {
+  color: #DC2149;
+}
+
+.footer .footer-content a:nth-child(3) svg:hover {
+  color: #F70000;
+}
+
+.footer .footer-content a:nth-child(4) svg:hover {
+  color: #34B3F7;
+}
+
+/*# sourceMappingURL=/index.css.map */

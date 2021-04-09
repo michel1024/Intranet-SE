@@ -1,0 +1,12 @@
+{
+    "sourceDirectory": "src",
+    "sharePointSiteUrl": "https://secol.sharepoint.com/sites/Intranet",
+    "workspaceRoot": "c:\\Proyectos\\intranet-home-se",
+    "publishWorkspaceOptions": {
+        "destinationFolder": "/",
+        "globPattern": "c:\\Proyectos\\intranet-home-se\\src\\**\\*.*",
+        "localRoot": "c:\\Proyectos\\intranet-home-se\\src"
+    },
+    "publishingScope": "SaveOnly",
+    "authenticationType": "Digest"
+}

@@ -1,0 +1,77 @@
+@import "../../variables.scss";
+
+.cards-content{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin-bottom: 30px !important;
+}
+
+.cards-content div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 200px;
+  background-color: rgba(157, 157, 156, 0.5);
+  // background-color: #9D9D9C;
+}
+
+.cards-content div .expand{
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  // background-color:rgba(0,0,0,0.7);
+  border-radius: 0px 0px 400px 0px;
+  transition: all 0.2s ease-in;
+}
+
+.cards-content div .expand a{
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  margin-left: -40px;
+  transition: all 0.7s ease-in;
+}
+
+.cards-content div .expand-reports{
+  background-color: #E5AC1C;
+}
+
+.cards-content div .expand-projects{
+  background-color: #257725;
+}
+
+.cards-content div .expand-encuestas{
+  background-color: #E30613;
+}
+
+.cards-content div:hover .expand{
+  width: 250px;
+  height: 200px;
+  border-radius: 0px;
+}
+
+.cards-content div:hover a{
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.cards-content div h3{
+  font-size: 25px;
+}
+
+.cards-content div .expand div{
+  cursor: pointer;
+}
+
+.cards-content div .expand div img{
+  max-width: 50px;
+}

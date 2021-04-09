@@ -3,17 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@pnp/sp": "^2.3.0",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-parallax": "^3.2.1",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^10.16.0",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "parcel ./src/index.jsx --no-hmr",
+    "build": "parcel build ./src/index.jsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/kendo-ui": "^2021.1.1",
+    "sass": "^1.32.8"
   }
 }

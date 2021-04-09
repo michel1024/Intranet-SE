@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.footer{
+  background-color: $gray;
+  padding-top: 50px;
+  padding-bottom: 15px !important;
+  width: 100%;
+}
+
+.footer h3{
+  color: white;
+  font-size: 20px;
+}
+
+.footer .footer-content{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-content a svg{
+  color: white;
+  font-size: 35px !important;
+  transition: all 0.5s;
+}
+
+.footer .footer-content a:nth-child(1) svg:hover{
+  color: #0270AD;
+}
+
+.footer .footer-content a:nth-child(2) svg:hover{
+  color: #DC2149;
+}
+
+.footer .footer-content a:nth-child(3) svg:hover{
+  color: #F70000;
+}
+
+.footer .footer-content a:nth-child(4) svg:hover{
+  color: #34B3F7;
+}

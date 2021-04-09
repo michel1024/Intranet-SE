@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+
+.birthday-content{
+  background: url(https://secol.sharepoint.com/sites/Intranet/SiteAssets/IntranetSE/imagenes/birthday-back2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 0;
+
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.birthdayCardsContent .birthday{
+  width: 300px !important;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 10px 20px;
+  transition: all 0.3s;
+}
+
+.birthdayCardsContent .birthday .image-content{
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.birthdayCardsContent .birthday .image-content img{
+  max-width: 100%;
+  max-height: 100% !important;
+}
+
+// .birthdayCardsContent .birthday:hover{
+//   background-color: #1dcad6;
+// }
+
+.birthdayCardsContent .birthday h2{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.birthdayCardsContent .birthday p{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.birthday-content .slick-prev:before,
+.birthday-content .slick-next:before{
+  color: white !important;
+  font-size: 30px !important;
+  opacity: 1;
+}

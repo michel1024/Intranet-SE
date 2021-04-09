@@ -1,0 +1,65 @@
+@import './variables.scss';
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Ocultar buscador de la barra superior de sharepoint */
+._3Z7VFS_x3gZybNb1mFRy6C._1y4to_BFWuriD3uP1TvTQ8.Its0LEoVfS3AbQY9MWygN.o365sx-searchBoxInactive{
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Ocultar logo de la barra superior de sharepoint */
+#leftRegion.wfFdvWFDB5g8R2lHFkXD1{
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+#suiteBarTop{
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.title-birthday-content .birthday-title{
+  color: black;
+  font-weight: normal;
+  margin-bottom: 0px !important;
+  margin-right: 15px;
+}
+
+.title-birthday-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px !important;
+}
+
+.title-birthday-content .add{
+  cursor: pointer;
+  border: 1px solid $gray;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.title-birthday-content .add span{
+  margin-left: 8px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1000;
+  margin-left: -15px;
+  transition: all 0.5s;
+}
+
+.title-birthday-content .add:hover span{
+  opacity: 1;
+  z-index: 1;
+  margin-left: 30px;
+}
